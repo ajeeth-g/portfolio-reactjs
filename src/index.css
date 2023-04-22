@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--text-selection);
+}
+
+:root {
+  /* COLOR */
+
+  --text-main: #23282e;
+  --text-body: #23282e;
+  --text-muted: #4f5358;
+  --color-accent: #d6c687;
+  --color-accent--100: #fff;
+  --color-accent--300: #fefbef;
+  --bg-main: #f6f7f2;
+  --bg-main-op75: rgba(231, 229, 225, 0.4588235294117647);
+  --bg-main-op95: rgba(215, 214, 209, 0.5843137254901961);
+  --para-secondary: rgba(255, 255, 255, 0.6);
+  --bg-main-300: #ebebe8;
+  --bg-main-700: rgba(191, 190, 186, 0.7);
+  --bg-main-900: #c2c1bc;
+  --bg-panel: #e6e6dd;
+  --bg-footer: #222;
+  --bg-footer-300: rgba(60, 60, 60, 0.7);
+  --card-shadow: 0 16px 40px 12px #cdcdc4;
+  --card-shadow-700: 0 16px 40px 12px rgba(183, 182, 177, 0.7);
+  --dropdown-shadow: 0px 4px 16px 4px rgba(41, 41, 41, 0.1);
+  --text-selection: #e5d99e;
+  --bg-dark: #212224;
+
+  /* FONT SIZE */
+  --font--size-10: 0.625rem;
+  --font--size-12: 0.75rem;
+  --font--size-15: 0.9375rem;
+  --font--size-20: 1.25rem;
+  --font--size-30: 1.875rem;
+  --font--size-37: 2.3125rem;
+
+  /* CONTAINER SIZE */
+
+  --container-width-lg: 82%;
+  --container-width-md: 90%;
+
+  --transistion: all 500ms ease;
+
+  --text--decoration-thick: 1px;
+
+  --border-radius: 0.35rem;
+}
+
+/* GENERAL STYLES */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--text-main);
+  overflow-x: hidden;
+  background-color: var(--bg-main);
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+.container {
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+*:active,
+a {
+  color: var(--text-main);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 2.5625rem;
+}
+
+.btn-downArrow {
+  margin-left: 0.225rem;
+  font-size: 17px;
+  padding: 0.2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: var(--transistion);
+  cursor: pointer;
+}
+
+.btn-downArrow:hover {
+  background-color: var(--bg-main-700);
+  border-radius: var(--border-radius);
+  transform: translateY(7px);
+}
