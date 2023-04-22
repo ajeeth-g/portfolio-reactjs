@@ -1,0 +1,14 @@
+.work__content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.work__right {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.work__right p:nth-child(2){
+    font-size: var(--font--size-20);
+    color: var(--text-muted);
+}

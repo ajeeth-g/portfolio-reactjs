@@ -15,9 +15,6 @@
   width: max-content;
   row-gap: 30px;
 }
-.logo {
-  color: var(--color-accent--100);
-}
 
 .footer__left-all p {
   font-size: var(--font--size-10);

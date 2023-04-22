@@ -1,4 +1,4 @@
-import MainHeader from "./mainHeader/MainHeader";
+import AboutHeader from "./aboutHeader/AboutHeader";
 import Profile from "./profile/Profile";
 import "./About.css";
 import SkillSets from "./skillSet/SkillSets";
@@ -7,10 +7,10 @@ import Experience from "./experience/Experience";
 const About = () => {
   return (
     <div>
-      <MainHeader />
+      <AboutHeader />
       <Profile />
-      <SkillSets/>
-      <Experience/>
+      <SkillSets />
+      <Experience />
     </div>
   );
 };

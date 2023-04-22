@@ -3,9 +3,9 @@ import { skills } from "./data";
 
 const SkillSets = () => {
   return (
-    <section className="container about__container skillsets__container">
-      <div className="about-left"></div>
-      <div className="about__right skillset__content">
+    <section className="container  skillsets__container">
+      <div className="container__left"></div>
+      <div className="about__right-content">
         <div className="skillset__left">
           <h1>Skillset</h1>
         </div>

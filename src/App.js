@@ -50,7 +50,7 @@ const App = () => {
               <Route path="/work" element={<Work mode={mode} />} />
               <Route path="/contact" element={<Contact mode={mode} />} />
             </Routes>
-            <Footer mode={mode} setMode={setMode} />
+            {/* <Footer mode={mode} setMode={setMode} /> */}
           </BrowserRouter>
         </>
       )}

@@ -1,11 +1,14 @@
-import './Work.css'
+import Projects from "./projects/Projects";
+import "./Work.css";
+import WorkHeader from "./workHeader/WorkHeader";
 
 const Work = () => {
   return (
-    <section className="container work__container">
-      Work
-    </section>
-  )
-}
+    <>
+      <WorkHeader />
+      <Projects />
+    </>
+  );
+};
 
-export default Work
+export default Work;

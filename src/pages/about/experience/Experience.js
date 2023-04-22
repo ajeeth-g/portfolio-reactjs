@@ -1,28 +1,36 @@
-import React from "react";
+import { experience } from "./data";
 
 const Experience = () => {
   return (
     <section className="full__width__panel">
-      <section className="container about__container skillsets__container">
-        <div className="about-left">Experience</div>
-        <div className="about__right skillset__content">
+      <div className="container  container__body container__experience">
+        <div className="container__left">EXPERIENCE</div>
+        <div className="about__right-content">
           <div className="experience__left">
             <h1>Experience</h1>
           </div>
           <div className="experience__right">
-            <div className="experience__content-left">
-              <div className="role">
-                <p>Fronend Developer</p>
-              </div>
-              <div className="details">
-                <span>Upcoming</span>
-                <span>2023</span>
-              </div>
-            </div>
-            <div className="experience__content-right">Remote</div>
+            {experience.map(({ role, mode, details }, index) => {
+              return (
+                <div className="job__list">
+                  <div key={index} className="experience__right-left">
+                    <p className="role">{role}</p>
+                    <div className="details">
+                      {details.map((detail, index) => {
+                        return <span key={index}>{detail}</span>;
+                      })}
+                    </div>
+                  </div>
+
+                  <div key={index} className="experience__content-right">
+                    {mode}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };
