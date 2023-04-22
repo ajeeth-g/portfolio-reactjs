@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { RxChevronDown } from "react-icons/rx";
 import { BsSend } from "react-icons/bs";
@@ -9,6 +9,9 @@ import "./navbar.css";
 
 const Navbar = ({ mode, setMode }) => {
   const [panel, setPanel] = useState(false);
+  const downArrowRef = useRef(null);
+  // console.log(downArrowRef);
+
 
   // DARK MODE CODE START
   const handleDarkMode = () => {
@@ -16,7 +19,7 @@ const Navbar = ({ mode, setMode }) => {
       setMode(!mode);
     });
   };
-  
+
   useEffect(() => {
     document.body.style.setProperty("--bg-main", mode ? "#212224" : "#f6f7f2");
     document.body.style.setProperty("--text-main", mode ? "#fff" : "#23282e");
@@ -34,7 +37,24 @@ const Navbar = ({ mode, setMode }) => {
       "--bg-main-300",
       mode ? "#2e2e31" : "#ebebe8"
     );
-  }, [mode]);
+
+    const handleClickOutside = (event) => {
+      if (
+        panel &&
+        !event.target.closest(".nav__downArrow-info") &&
+        downArrowRef.current &&
+        !downArrowRef.current.contains(event.target)
+      ) {
+        setPanel(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [mode, panel]);
 
   // DARK MODE CODE END
 
@@ -63,7 +83,7 @@ const Navbar = ({ mode, setMode }) => {
             </li>
           </ul>
 
-          <div className="nav__downArrow-info">
+          <div className="nav__downArrow-info" ref={downArrowRef}>
             <button>
               <RxChevronDown
                 onClick={() => setPanel(!panel)}

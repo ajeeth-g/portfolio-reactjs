@@ -160,7 +160,6 @@ img {
 img:hover {
   cursor: url(./assets/Pointer.png) 10 10, auto;
   transform: scale(1.02);
-  box-shadow: var(--card-shadow-700);
   filter: brightness(1);
 }
 
