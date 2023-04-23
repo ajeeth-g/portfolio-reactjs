@@ -1,0 +1,57 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 30px 20px;
+  background-color: var(--bg-main);
+  border-radius: var(--border-radius-12);
+  width: max-content;
+  transition: var(--transistion);
+}
+
+p {
+  font-size: var(--font--size-10);
+  color: var(--para-secondary);
+}
+
+h2 {
+  font-size: var(--font--size-30);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: var(--font--size-15);
+  font-weight: 400;
+}
+
+.card:hover {
+  scale: 1.05;
+  box-shadow: var(--dropdown-shadow);
+}
+
+.card img {
+  border-radius: var(--border-radius-12);
+}
+
+.work__links {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-medium {
+  padding: 10px 20px;
+  border-radius: var(--border-radius-12);
+  width: max-content;
+  background-color: aqua;
+}
+
+.btn-bg {
+  border: 2px solid #fff;
+  background-color: transparent;
+}

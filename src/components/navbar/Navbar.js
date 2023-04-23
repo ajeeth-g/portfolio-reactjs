@@ -10,8 +10,6 @@ import "./navbar.css";
 const Navbar = ({ mode, setMode }) => {
   const [panel, setPanel] = useState(false);
   const downArrowRef = useRef(null);
-  // console.log(downArrowRef);
-
 
   // DARK MODE CODE START
   const handleDarkMode = () => {
@@ -24,6 +22,7 @@ const Navbar = ({ mode, setMode }) => {
     document.body.style.setProperty("--bg-main", mode ? "#212224" : "#f6f7f2");
     document.body.style.setProperty("--text-main", mode ? "#fff" : "#23282e");
     document.body.style.setProperty("--text-muted", mode ? "#fff" : "#4f5358");
+    document.body.style.setProperty("--text-body", mode ? "#fff" : "#23282e");
     document.body.style.setProperty(
       "--bg-main-300",
       mode ? "#2e2e31" : "#ebebe8"

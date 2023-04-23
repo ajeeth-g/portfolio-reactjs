@@ -42,13 +42,13 @@ const Profile = () => {
             <img
               src={ProfileImg1}
               alt="Profile"
-              className=" profileImg__left"
+              className="img__profile profileImg__left"
             />
           </figure>
         </div>
         <div className="profile__right-right ">
           <figure>
-            <img src={ProfileImg2} alt="Profile" />
+            <img src={ProfileImg2} alt="Profile" className="img__profile" />
           </figure>
           <p>
             Early in my career, I started as a software engineer developing

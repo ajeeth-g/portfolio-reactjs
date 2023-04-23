@@ -1,7 +1,7 @@
 const WorkHeader = () => {
   return (
     <section className="container container__hero mainHeader ">
-      <div className="work__left about-left">work</div>
+      <div className="work__left about-left"></div>
       <div className="work__right">
         <h1>
           Digital product designer who can work with code, currently building

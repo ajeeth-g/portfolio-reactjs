@@ -59,6 +59,7 @@
   --text--decoration-thick: 1px;
 
   --border-radius: 0.35rem;
+  --border-radius-12: 12px;
 }
 
 /* GENERAL STYLES */
@@ -73,7 +74,16 @@ body {
   cursor: default;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* GENERAL CLASS STYLE  */
+
+.full__width__panel {
+  background-color: var(--bg-panel);
+  padding: 50px 0;
+}
 
 .container {
   width: var(--container-width-lg);
@@ -99,6 +109,23 @@ body {
 .container__left {
   font-size: var(--font--size-10);
   color: var(--text-muted);
+}
+
+.img__profile {
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.8);
+  background-color: rgb(68, 65, 65);
+  height: 100%;
+  width: 92%;
+  border-radius: 0.75rem;
+  transition: var(--transistion);
+}
+
+.img__profile:hover {
+  cursor: url(./assets/Pointer.png) 10 10, auto;
+  transform: scale(1.02);
+  filter: brightness(1);
 }
 
 /* DOWN ARROW BUTTON STYLE */
@@ -146,23 +173,6 @@ body {
 
 /* IMAGE STYLE  */
 
-img {
-  display: block;
-  object-fit: cover;
-  filter: brightness(0.8);
-  background-color: rgb(68, 65, 65);
-  height: 100%;
-  width: 92%;
-  border-radius: 0.75rem;
-  transition: var(--transistion);
-}
-
-img:hover {
-  cursor: url(./assets/Pointer.png) 10 10, auto;
-  transform: scale(1.02);
-  filter: brightness(1);
-}
-
 button {
   background-color: transparent;
   border-radius: var(--border-radius);
@@ -195,6 +205,11 @@ h1 {
   }
 
   .container__body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container__hero {
     display: grid;
     grid-template-columns: 1fr;
   }
