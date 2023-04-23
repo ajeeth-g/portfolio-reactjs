@@ -4,10 +4,12 @@ import { RxChevronDown } from "react-icons/rx";
 import { BsSend } from "react-icons/bs";
 import { FiCopy } from "react-icons/fi";
 import { handleCopyEmail } from "../../data";
+import { projects } from "../../pages/work/projects/data";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 import "./navbar.css";
 
 const Navbar = ({ mode, setMode }) => {
+  const work = projects.length;
   const [panel, setPanel] = useState(false);
   const downArrowRef = useRef(null);
 
@@ -73,7 +75,7 @@ const Navbar = ({ mode, setMode }) => {
             <li>
               <NavLink to="/work">
                 <div className="work__notification">
-                  Work <span>4</span>
+                  Work <span>{work}</span>
                 </div>
               </NavLink>
             </li>

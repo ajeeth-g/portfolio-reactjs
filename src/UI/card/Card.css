@@ -1,6 +1,7 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -8,10 +9,15 @@
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 30px 20px;
+  height: max-content;
   background-color: var(--bg-main);
   border-radius: var(--border-radius-12);
   width: max-content;
   transition: var(--transistion);
+}
+
+.card:nth-child(2n) {
+  margin-top: 4rem;
 }
 
 p {
@@ -49,9 +55,14 @@ h3 {
   border-radius: var(--border-radius-12);
   width: max-content;
   background-color: aqua;
+  border: transparent;
+  transition: var(--transistion);
+}
+
+.btn-medium:hover {
+  border: 1px solid black;
 }
 
 .btn-bg {
-  border: 2px solid #fff;
   background-color: transparent;
 }
