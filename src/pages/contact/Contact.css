@@ -1,5 +1,64 @@
-.contact__container {
-  position: relative;
-  top: 13.125rem;
-  height: 3000px;
+/* CONATACT BODY  */
+
+.containerBody__right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 6.25rem 0;
+}
+
+.containerBody__right-contact {
+  padding: 50px;
+  background-color: var(--bg-main);
+  height: 380px;
+  box-shadow: var(--card-shadow);
+}
+
+.containerBody__right-items {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.containerBody__right-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerBody__right-contact {
+  display: flex;
+  gap: 40px;
+  transition: var(--transistion);
+}
+
+.containerBody__right-contact:hover {
+  transform: rotate(-3deg);
+}
+
+.containerBody__right-contactLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerBody__right-contactLeft h1 {
+  width: 75%;
+}
+
+.containerBody__contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.containerBody__contact ul li {
+  font-size: var(--font--size-12);
+}
+
+.containerBody__contact ul li:nth-child(1) {
+  text-decoration: underline;
+}
+
+.containerBody__right-contactRight {
+  writing-mode: vertical-rl;
 }

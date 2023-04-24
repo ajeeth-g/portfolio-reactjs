@@ -2,7 +2,7 @@ import { RxSpeakerQuiet } from "react-icons/rx";
 
 const AboutHeader = () => {
   return (
-    <section className="container container__hero mainHeader">
+    <section className="container container__hero">
       <div className="container__left"></div>
       <div className="aboutHeader__right">
         <h1>

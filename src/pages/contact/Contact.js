@@ -1,10 +1,13 @@
 import "./Contact.css";
+import ContactBody from "./contactBody/ContactBody";
+import ContactHeader from "./contactHeader/ContactHeader";
 
-const Contact = ({ mode }) => {
+const Contact = () => {
   return (
-    <section className={`container contact__container}`}>
-      Contact
-    </section>
+    <>
+      <ContactHeader />
+      <ContactBody />
+    </>
   );
 };
 

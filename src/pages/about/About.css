@@ -53,68 +53,20 @@
 .profile__right {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 768px;
+  gap: 30px;
 }
 
-.profile__right-contact {
-  display: flex;
-  position: relative;
-  align-items: center;
-  margin: 5rem 0;
-  font-size: var(--font--size-15);
-}
-
-.profile__right-contactText {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.mail {
-  text-decoration: underline;
-}
-
-.profile__right-contactText a::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 1.2px;
-  height: 15px;
-  background-color: var(--text-body);
-  margin-left: 0.4rem;
-}
-
-.closeDrawer {
-  display: none;
-}
-
-.openDrawer {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  bottom: -200%;
-  left: 0;
-  width: max-content;
-  padding: 16px 12px;
-  border-radius: var(--border-radius);
-  color: var(--text-main);
-  background-color: var(--bg-main-300);
-  font-weight: 500;
-  cursor: pointer;
-  font-size: var(--font--size-10);
-}
-
-.openDrawer:hover {
-  text-decoration: underline;
-}
-
-.profile__right-right img {
+.img__profile {
+  width: 100%;
   margin-bottom: 3rem;
 }
 
-.profile__right-right p {
+.content p {
+  font-size: var(--font--size-15);
   line-height: 1.625rem;
   margin-bottom: 1rem;
+  color: var(--text-main);
 }
 
 .profile__right-rightMail {
@@ -123,6 +75,7 @@
   align-items: center;
   height: max-content;
   gap: 0.5rem;
+  font-size: var(--font--size-15);
 }
 
 .profile__right-rightMail button {
@@ -201,19 +154,28 @@
   .skillsets__container {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 5rem;
   }
 
   .about__right-content {
     display: grid;
+
     grid-template-columns: 1fr;
-    margin-inline: auto;
+    width: max-content;
   }
   .skillset__right {
     display: grid;
     grid-template-columns: 1fr;
-    height: max-content;
-    column-gap: 10rem;
-    margin-inline: auto;
+  }
+
+  .skill__content {
+    margin-bottom: 0.2rem;
+  }
+
+  .heading {
+    font-size: var(--font--size-15);
+    font-weight: 700;
+    margin-top: 1.5rem;
   }
 }
 
@@ -222,6 +184,7 @@
 .experience__right {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
 }
@@ -229,6 +192,7 @@
 .job__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .experience__right-left {
@@ -252,4 +216,17 @@
   justify-content: space-between;
   font-size: var(--font--size-10);
   color: var(--para-secondary);
+}
+
+/* MEDIA QUERY FOR MOBILE DEVICES (MAX 768px) */
+
+@media only screen and (max-width: 768px) {
+  .job__list {
+    width: 50%;
+  }
+
+  
+.experience__right {
+ width: 50%;
+}
 }

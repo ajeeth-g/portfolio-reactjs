@@ -1,0 +1,53 @@
+.profile__right-contact {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 5rem 0;
+    font-size: var(--font--size-15);
+  }
+  
+  .profile__right-contactText {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  
+  .mail {
+    text-decoration: underline;
+  }
+  
+  .profile__right-contactText a::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1.2px;
+    height: 15px;
+    background-color: var(--text-body);
+    margin-left: 0.4rem;
+  }
+  
+  .closeDrawer {
+    display: none;
+  }
+  
+  .openDrawer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    bottom: -200%;
+    left: 0;
+    width: max-content;
+    padding: 16px 12px;
+    border-radius: var(--border-radius);
+    color: var(--text-main);
+    background-color: var(--bg-main-300);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: var(--font--size-10);
+  }
+  
+  .openDrawer:hover {
+    text-decoration: underline;
+  }
+  

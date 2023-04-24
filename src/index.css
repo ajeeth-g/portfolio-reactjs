@@ -33,7 +33,7 @@
   --bg-main-700: rgba(191, 190, 186, 0.7);
   --bg-main-900: #c2c1bc;
   --bg-panel: #e6e6dd;
-  --bg-footer: #222;
+  --bg-footer: #171717;
   --bg-footer-300: rgba(60, 60, 60, 0.7);
   --card-shadow: 0 16px 40px 12px #cdcdc4;
   --card-shadow-700: 0 16px 40px 12px rgba(183, 182, 177, 0.7);
@@ -42,6 +42,7 @@
   --bg-dark: #212224;
 
   /* FONT SIZE */
+
   --font--size-10: 0.625rem;
   --font--size-12: 0.75rem;
   --font--size-15: 0.9375rem;
@@ -59,7 +60,7 @@
   --text--decoration-thick: 1px;
 
   --border-radius: 0.35rem;
-  --border-radius-12: 12px;
+  --border-radius-12: 35px;
 }
 
 /* GENERAL STYLES */
@@ -70,7 +71,6 @@ body {
   color: var(--text-main);
   overflow-x: hidden;
   background-color: var(--bg-main);
-  scroll-behavior: smooth;
   cursor: default;
 }
 
@@ -91,25 +91,24 @@ html {
   margin-inline: auto;
 }
 
+.container__left {
+  font-size: var(--font--size-10);
+  color: var(--text-muted);
+}
+
+.container__hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 15.5rem;
+}
+
 .container__body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin-top: 4rem;
 }
 
-.container__hero {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-}
-
-.mainHeader {
-  margin-top: 15.5rem;
-}
-
-.container__left {
-  font-size: var(--font--size-10);
-  color: var(--text-muted);
-}
+/* IMAGE STYLE  */
 
 .img__profile {
   display: block;
@@ -147,6 +146,7 @@ html {
 }
 
 /* ANIMATION */
+
 .animation::after {
   content: "";
   position: absolute;
@@ -171,17 +171,13 @@ html {
   }
 }
 
-/* IMAGE STYLE  */
-
 button {
   background-color: transparent;
   border-radius: var(--border-radius);
-
   color: var(--text-muted);
   cursor: pointer;
 }
 
-*:active,
 a {
   color: var(--text-main);
 }
@@ -197,25 +193,27 @@ h1 {
 @media only screen and (max-width: 768px) {
   .container {
     width: var(--container-width-md);
-    margin-inline: auto;
+    max-width: 768px;
   }
 
   .container__left {
     display: none;
   }
 
-  .container__body {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
   .container__hero {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 10rem;
+  }
+
+  .container__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0rem;
   }
 
   h1 {
     font-size: var(--font--size-20);
-    font-weight: 400;
+    line-height: normal;
   }
 }

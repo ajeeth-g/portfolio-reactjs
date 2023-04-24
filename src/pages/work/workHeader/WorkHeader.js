@@ -1,6 +1,6 @@
 const WorkHeader = () => {
   return (
-    <section className="container container__hero mainHeader ">
+    <section className="container container__hero">
       <div className="work__left about-left"></div>
       <div className="work__right">
         <h1>
