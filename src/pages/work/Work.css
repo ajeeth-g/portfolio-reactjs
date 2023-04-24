@@ -80,6 +80,19 @@
   padding-right: 16px;
 }
 
+/* MEDIA QUERY FOR MOBILE DEVICES (MAX 768px) */
+
+@media only screen and (max-width: 768px) {
+  .process__right {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .process__right-left {
+    margin-bottom: 3rem;
+    font-size: var(--font--size-37);
+  }
+}
+
 /* ABOUT PAGE  */
 
 .aboutPage__container {
