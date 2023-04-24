@@ -221,12 +221,14 @@
 /* MEDIA QUERY FOR MOBILE DEVICES (MAX 768px) */
 
 @media only screen and (max-width: 768px) {
-  .job__list {
+  .experience__right {
+    gap: 25px;
     width: 50%;
   }
-
-  
-.experience__right {
- width: 50%;
-}
+  .job__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+  }
 }
