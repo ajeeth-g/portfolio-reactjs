@@ -22,6 +22,7 @@
 .work__project-right {
   display: grid;
   gap: 80px;
+  margin-inline: 0 auto ;
 }
 
 .btn-work {
