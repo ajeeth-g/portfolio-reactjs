@@ -3,7 +3,7 @@ import Card from "../../../UI/card/Card";
 
 const Projects = () => {
   return (
-    <section className="container container__body ">
+    <section className="container container__body projects__container">
       <div className="container__left">Work</div>
       <div className="work__project-right">
         <div className="btn-work">
