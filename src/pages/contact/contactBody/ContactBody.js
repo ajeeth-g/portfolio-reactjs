@@ -7,7 +7,7 @@ const ContactBody = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <section className="container container__body">
+    <section className="container container__body contact__container">
       <div className="container__left">CONTACT</div>
       <div className="containerBody__right">
         <div className="containerBody__right-items">
