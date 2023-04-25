@@ -14,10 +14,9 @@
   content: "";
   position: absolute;
   top: -30%;
-  /* left: 50%; */
-  left: -5%;
+  left: -10%;
   width: 62%;
-  height: 72%;
+  height: 92%;
   border: 2px solid var(--text-body);
   opacity: 0.5;
   border-radius: 100%;
