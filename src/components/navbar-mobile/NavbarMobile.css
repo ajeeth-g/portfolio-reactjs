@@ -1,0 +1,78 @@
+.nav__mobile {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: var(--bg-main);
+  height: 10vh;
+  width: 100vw;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navMobile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navMobile__logo {
+  position: relative;
+  font-size: var(--font--size-30);
+}
+
+.navMobile__Menubtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--font--size-30);
+}
+
+.navMobile__menu-btn {
+  display: flex;
+  align-items: center;
+  font-size: var(--font--size-30);
+}
+
+.navMobile__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 3rem;
+  position: absolute;
+  top: 92px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-main);
+  font-size: var(--font--size-30);
+}
+
+.close {
+  display: none;
+}
+
+.navMobile__open {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navMobile__list ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: var(--font--size-20);
+}
+
+.navMobileList__item a {
+  text-decoration: underline;
+}
+
+.navMobileContact-list {
+  font-size: var(--font--size-20);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}

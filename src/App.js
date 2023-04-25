@@ -6,8 +6,12 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
+import NavbarMobile from "./components/navbar-mobile/NavbarMobile";
 
 const App = () => {
+  const [mobileView, setMobileView] = useState(false);
+  console.log(mobileView);
+
   // SCREEN LOADER
   const [loading, setLoading] = useState(false);
 
@@ -25,7 +29,13 @@ const App = () => {
     setTimeout(() => {
       setLoading(false);
     }, 1500);
-  }, []);
+
+    if (window.innerWidth <= "768") {
+      setMobileView(true);
+    } else {
+      setMobileView(false);
+    }
+  }, [mobileView]);
 
   // DARK MODE CODE
   const [mode, setMode] = useState(false);
@@ -44,7 +54,11 @@ const App = () => {
       ) : (
         <>
           <BrowserRouter>
-            <Navbar mode={mode} setMode={setMode} />
+            {mobileView ? (
+              <NavbarMobile />
+            ) : (
+              <Navbar mode={mode} setMode={setMode} />
+            )}
             <Routes>
               <Route path="/" element={<About mode={mode} />} />
               <Route path="/work" element={<Work mode={mode} />} />
