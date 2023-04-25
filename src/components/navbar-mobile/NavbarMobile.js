@@ -23,7 +23,7 @@ const NavbarMobile = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           className="navMobile__Menubtn"
         >
-          menu
+          MENU
           <button className="navMobile__menu-btn">
             {menuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
           </button>
