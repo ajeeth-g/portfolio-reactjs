@@ -6,13 +6,20 @@ import "./NavbarMobile.css";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 
-const NavbarMobile = () => {
+const NavbarMobile = ({ mode, setMode }) => {
   const work = projects.length;
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // DARK MODE CODE START
+  const handleDarkMode = () => {
+    setMode((prevTheme) => {
+      setMode(!mode);
+    });
+  };
+
   return (
-    <nav className="nav__mobile">
+    <nav className=" nav__mobile ">
       <div className="navMobile__header">
         <div className="navMobile__log">
           <Link to="/" className="navMobile__logo">
@@ -25,11 +32,14 @@ const NavbarMobile = () => {
         >
           MENU
           <button className="navMobile__menu-btn">
-            {menuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
+            {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
       </div>
-      <div  onClick={() => setMenuOpen(!menuOpen)} className={`${menuOpen ? "navMobile__menu" : "close"}`}>
+      <div
+        onClick={() => setMenuOpen(!menuOpen)}
+        className={`${menuOpen ? "navMobile__menu" : "close"}`}
+      >
         <div className="navMobile__links">
           <ul>
             <li>
@@ -75,8 +85,8 @@ const NavbarMobile = () => {
             Naukri
           </Link>
         </div>
-        <button className="toggle-mode">
-          {true ? <MdDarkMode /> : <MdOutlineDarkMode />}
+        <button onClick={handleDarkMode} className="toggle-mode">
+          {mode ? <MdDarkMode /> : <MdOutlineDarkMode />}
         </button>
       </div>
     </nav>

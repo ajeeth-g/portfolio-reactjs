@@ -10,7 +10,6 @@ import NavbarMobile from "./components/navbar-mobile/NavbarMobile";
 
 const App = () => {
   const [mobileView, setMobileView] = useState(false);
-  console.log(mobileView);
 
   // SCREEN LOADER
   const [loading, setLoading] = useState(false);
@@ -55,7 +54,7 @@ const App = () => {
         <>
           <BrowserRouter>
             {mobileView ? (
-              <NavbarMobile />
+              <NavbarMobile mode={mode} setMode={setMode} />
             ) : (
               <Navbar mode={mode} setMode={setMode} />
             )}
