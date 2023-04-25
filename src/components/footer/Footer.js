@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <section className="full__width__footer">
       <footer className="container container__footer ">
-        <div className="rights"> &copy;copyrights</div>
         <div className="social">
           {socialMedia.map(({ icon, className, link }, index) => {
             return (

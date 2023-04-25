@@ -66,9 +66,8 @@
 /* MEDIA QUERY FOR MOBILE DEVICES (MAX 768px) */
 
 @media only screen and (max-width: 768px) {
-
-  .contact__container{
-    margin-bottom: 5rem;
+  .contact__container {
+    margin-bottom: 100vw;
   }
   .containerBody__right-items {
     gap: 0;

@@ -1,6 +1,9 @@
 .full__width__footer {
+  display: flex;
+  align-items: center;
   background-color: var(--bg-footer);
   height: 80px;
+  width: 100vw;
   padding: 20px 0;
 }
 
@@ -8,15 +11,18 @@
   display: flex;
   justify-content: space-around;
   color: #fff;
+  align-items: center;
 }
 
 .social {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .footer__icon {
   background-color: transparent;
   font-size: var(--font--size-20);
-  color: #fff;
+  color: var(--color-accent--300);
+  height: 200px;
 }
