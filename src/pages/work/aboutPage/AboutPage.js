@@ -6,7 +6,7 @@ const AboutPage = () => {
     <section className="container aboutPage__container">
       <div className="container__left">About</div>
       <h2 className="aboutPage">
-        <Link to="/" >Learn more about me</Link>
+        <Link to="/">Learn more about me</Link>
       </h2>
     </section>
   );
