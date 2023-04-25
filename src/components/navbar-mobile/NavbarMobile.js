@@ -85,7 +85,7 @@ const NavbarMobile = ({ mode, setMode }) => {
             Naukri
           </Link>
         </div>
-        <button onClick={handleDarkMode} className="toggle-mode">
+        <button onClick={handleDarkMode} className="navMobileToggle-mode">
           {mode ? <MdDarkMode /> : <MdOutlineDarkMode />}
         </button>
       </div>
