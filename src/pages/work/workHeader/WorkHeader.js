@@ -4,8 +4,8 @@ const WorkHeader = () => {
       <div className="work__left about-left"></div>
       <div className="work__right">
         <h1>
-          Digital product designer who can work with code, currently building
-          tools at GitHub
+          <span className="workAnimation" >Frontend Developer</span> who can work with code, currently
+          building tools at GitHub
         </h1>
         <p>
           I craft strategy-based products by asking the right questions and

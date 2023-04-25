@@ -15,8 +15,6 @@
   background-color: var(--bg-main);
   border-radius: var(--border-radius-12);
   transition: var(--transistion);
-
-  /* overflow: hidden; */
 }
 .card:nth-child(2n) {
   margin-top: 4rem;
@@ -57,13 +55,13 @@ h3 {
   padding: 10px 20px;
   border-radius: var(--border-radius-12);
   width: max-content;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--bg-main-300);
   border: transparent;
   transition: var(--transistion);
 }
 
 .btn-medium:hover {
-  border: 1px solid black;
+  border: 1px solid var(--text-main);
 }
 
 .btn-bg {

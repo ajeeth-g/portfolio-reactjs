@@ -30,20 +30,25 @@ const Profile = () => {
           </figure>
           <div className="content">
             <p>
-              Early in my career, I started as a software engineer developing
-              financial systems. On the side, I did designs, and developments on
-              various landing pages, and CMS sites. Some of my work exposed me
-              to learn new languages and frameworks such as Ruby on Rails,
-              Elixir, and ReactJS. I see this as my advantage in designing
-              feasible solutions and communicating ideas to engineers. I have
-              since focused on design. I have held positions in various
-              industries such as banking, advertising, and startups.
+              Early in my career, I started as a component engineer at VVDN
+              Technologies, where I have gained 3 years of experience in
+              component design and development. On the side, I have been
+              learning and practicing front-end development skills, such as
+              HTML, CSS, JavaScript, ReactJS, GitHub, Material UI, and Figma. I
+              am passionate about front-end development and would like to switch
+              my career to a front-end developer role. My experience as a
+              component engineer has given me a unique perspective when it comes
+              to designing and developing front-end solutions that are both
+              technically feasible and aesthetically pleasing.
             </p>
             <p>
-              Here are some of the companies and brands I have worked with:
-              Lonely Planet, Simmons & Simmons, OP Games, Toyota Philippines,
-              Mashup Garage, Eastwest Banking Corporation, PAREF Southridge
-              School, IdeasXMachina, and Lorenzana Food Corp.
+              While my experience has primarily been in component engineering at
+              VVDN Technologies, I am passionate about front-end development and
+              eager to transition into a role where I can utilize my skills in
+              HTML, CSS, JavaScript, ReactJS, GitHub, Material UI, and Figma. I
+              have worked with various clients in different industries and
+              gained valuable experience in designing and developing software
+              solutions.
             </p>
             <div className="profile__right-rightMail">
               <span>

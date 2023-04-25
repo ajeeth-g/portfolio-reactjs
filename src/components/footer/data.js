@@ -8,15 +8,15 @@ export const socialMedia = [
   {
     icon: <AiOutlineGithub />,
     className: "footer__icon",
-    name: "Instagram",
-    link: "https://www.instagram.com/",
+    name: "Github",
+    link: "https://github.com/ajeeth-g?tab=repositories",
   },
   {
     icon: <AiOutlineInstagram />,
-    name: "Facebook",
+    name: "Instagram",
     className: "footer__icon",
 
-    link: "https://www.facebook.com/",
+    link: "https://www.instagram.com/",
   },
   {
     icon: <AiOutlineWhatsApp />,

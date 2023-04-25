@@ -32,7 +32,7 @@ const ContactBody = () => {
         </div>
         <div className="containerBody__right-contact">
           <div className="containerBody__right-contactLeft">
-            <h1>Digital Product Designer</h1>
+            <h1>Frontend Developer</h1>
             <div className="containerBody__contact">
               <ul>
                 <li>

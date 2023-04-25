@@ -10,28 +10,27 @@ const AboutHeader = () => {
           <button className="speakerIcon" aria-describedby="tippy-1">
             <RxSpeakerQuiet />
           </button>
-          <br />
-          I've been a product, and web designer for a combination of 9 years.
+          <br />I am a self-taught Front-end developer with 3 years of
+          experience as a Component Engineer.
         </h1>
         <h1>
-          I am currently working at{" "}
+          Currently, I am working at{" "}
           <a
-            href="https://github.com/ajeeth-g"
+            href="https://www.vvdntech.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="socialMedia animation"
           >
-            GitHub&nbsp;
+            VVDN&nbsp;
           </a>
-          as a product designer, helping build the tools for people who like
-          building software.
+          as a Component Engineer where I specialize in HTML, CSS, and
+          JavaScript.
         </h1>
         <p>
-          I was previously the Head of Design at LawAdvisor. Before the pandemic
-          hit, I was fortunate to be sent to London, Melbourne, and Brisbane for
-          client collaborations. During my tenure, I have worked on legal
-          project management, digital contracts, resourcing solution, tender
-          management, and its core SaaS product.
+          I am passionate about front-end development and constantly learning
+          new technologies to enhance my skills. I am actively seeking
+          opportunities to join a team as a front-end developer, where I can
+          utilize my skills and make a valuable contribution.
         </p>
       </div>
     </section>

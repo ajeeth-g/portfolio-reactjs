@@ -1,3 +1,33 @@
+/* CONATACT HEADER  */
+.containerHeader__right h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.contactAnimation::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  /* left: 50%; */
+  right: -8%;
+  width: 42%;
+  height: 172%;
+  border: 2px solid var(--text-body);
+  opacity: 0.5;
+  border-radius: 100%;
+  transform: rotate(-6deg);
+}
+
+.contactAnimation:hover::after {
+  animation: rotating-354 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+}
+
+@keyframes rotating-354 {
+  to {
+    transform: rotate(354deg);
+  }
+}
+
 /* CONATACT BODY  */
 
 .containerBody__right {
