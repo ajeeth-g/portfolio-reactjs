@@ -58,6 +58,7 @@
 .containerBody__right-contact {
   display: flex;
   gap: 40px;
+  justify-content: space-between;
   transition: var(--transistion);
 }
 
