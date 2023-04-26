@@ -57,6 +57,15 @@
   gap: 30px;
 }
 
+.profile__right-left {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.profile__right-right {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .img__profile {
   width: 100%;
   margin-bottom: 3rem;
