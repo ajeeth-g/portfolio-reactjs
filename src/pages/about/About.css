@@ -71,6 +71,10 @@
   margin-bottom: 3rem;
 }
 
+.content{
+  margin-top: 3rem;
+}
+
 .content p {
   font-size: var(--font--size-15);
   line-height: 1.625rem;
