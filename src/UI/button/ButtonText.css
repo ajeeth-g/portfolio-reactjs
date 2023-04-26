@@ -9,6 +9,7 @@
   .profile__right-contactText {
     display: flex;
     align-items: center;
+    width: max-content;
     gap: 7px;
   }
   
