@@ -176,6 +176,7 @@ button {
   border-radius: var(--border-radius);
   color: var(--text-muted);
   cursor: pointer;
+  width: max-content;
 }
 
 a {
