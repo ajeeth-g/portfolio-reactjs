@@ -53,25 +53,21 @@
 .profile__right {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 768px;
-  gap: 30px;
+  column-gap: 30px;
 }
 
 .profile__right-left {
   display: grid;
+  height: max-content;
   grid-template-columns: 1fr;
 }
 
-.profile__right-right {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 .img__profile {
   width: 100%;
-  margin-bottom: 3rem;
+  height: 40rem;
 }
 
-.content{
+.content {
   margin-top: 3rem;
 }
 

@@ -46,7 +46,7 @@ const App = () => {
           color={"var(--color-accent)"}
           loading={loading}
           cssOverride={override}
-          size={100}
+          size={150}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
@@ -63,7 +63,7 @@ const App = () => {
               <Route path="/work" element={<Work mode={mode} />} />
               <Route path="/contact" element={<Contact mode={mode} />} />
             </Routes>
-            <Footer mode={mode} setMode={setMode} />
+            <Footer />
           </BrowserRouter>
         </>
       )}

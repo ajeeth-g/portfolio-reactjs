@@ -14,13 +14,13 @@
   content: "";
   position: absolute;
   top: -30%;
-  left: -10%;
-  width: 62%;
+  left: -4%;
+  width: 55%;
   height: 92%;
   border: 2px solid var(--text-body);
   opacity: 0.5;
   border-radius: 100%;
-  transform: rotate(-6deg);
+  transform: rotate(-3deg);
 }
 
 .workAnimation:hover::after {

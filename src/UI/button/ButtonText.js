@@ -16,7 +16,7 @@ const ButtonText = ({ setOpenDrawer, openDrawer }) => {
             className="btn-downArrow"
           />
         </button>
-      </div>
+      </div>  
       <div
         onClick={handleCopyEmail}
         className={`${openDrawer ? "openDrawer" : "closeDrawer"}`}
