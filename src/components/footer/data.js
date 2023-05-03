@@ -16,7 +16,7 @@ export const socialMedia = [
     name: "Instagram",
     className: "footer__icon",
 
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/alone_like_men/",
   },
   {
     icon: <AiOutlineWhatsApp />,
