@@ -22,6 +22,6 @@ export const socialMedia = [
     icon: <AiOutlineWhatsApp />,
     name: "Whatsapp",
     className: "footer__icon",
-    link: "https://www.naukri.com/mnjuser/homepage",
+    link: "https://wa.me/919092155212",
   },
 ];
