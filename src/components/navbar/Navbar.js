@@ -26,6 +26,10 @@ const Navbar = ({ mode, setMode }) => {
     document.body.style.setProperty("--text-muted", mode ? "#fff" : "#4f5358");
     document.body.style.setProperty("--text-body", mode ? "#fff" : "#23282e");
     document.body.style.setProperty(
+      "--card-shadow",
+      mode ? "0 16px 40px 12px #171717" : "0 16px 40px 12px #cdcdc4"
+    );
+    document.body.style.setProperty(
       "--bg-main-300",
       mode ? "#2e2e31" : "#ebebe8"
     );
