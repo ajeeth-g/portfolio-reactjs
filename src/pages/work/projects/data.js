@@ -17,6 +17,7 @@ export const projects = [
     photo:
       "https://cdn.dribbble.com/users/3102427/screenshots/17514939/media/6479c1d4cccbf6d5657a05da22048154.jpg?compress=1&resize=400x300&vertical=top",
     github: "https://github.com/ajeeth-g/netfilx-clone-react",
+    className: "noDemo"
   },
   // {
   //   id: "03",

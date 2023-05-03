@@ -64,6 +64,10 @@ h3 {
   border: 1px solid var(--text-main);
 }
 
+.noDemo {
+  cursor: not-allowed;
+}
+
 .btn-bg {
   background-color: transparent;
 }
@@ -82,5 +86,9 @@ h3 {
 
   .card img {
     width: 100%;
+  }
+
+  .card:hover {
+    scale: 1;
   }
 }

@@ -6,7 +6,16 @@ const Card = () => {
     <article id="work" className="cards">
       {projects.map(
         (
-          { id, overtitle, title, description, photo, github, viewDemo },
+          {
+            id,
+            overtitle,
+            title,
+            description,
+            photo,
+            github,
+            viewDemo,
+            className,
+          },
           index
         ) => {
           return (
@@ -32,7 +41,9 @@ const Card = () => {
                   href={viewDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-medium btn-bg"
+                  className={`${
+                    className ? "btn-medium btn-bg noDemo" : "btn-medium btn-bg"
+                  }`}
                 >
                   View Demo
                 </a>
