@@ -7,7 +7,7 @@ export const projects = [
     photo:
       "https://cdn.dribbble.com/userupload/5516658/file/original-0d8b3244373404f792055d5904718ddb.png?compress=1&resize=400x300&vertical=top",
     github: "https://github.com/ajeeth-g/portfolio-reactjs",
-    viewDemo: "www.ajeeth.me",
+    viewDemo: "https://ajeeth.me/",
   },
   {
     id: "02",
