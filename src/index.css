@@ -133,8 +133,8 @@ html {
   margin-left: 0.225rem;
   font-size: 17px;
   padding: 0.2rem;
-  height: max-content;
-  width: max-content;
+  height: 1.8rem;
+  width: 1.8rem;
   transition: var(--transistion);
   cursor: pointer;
 }
