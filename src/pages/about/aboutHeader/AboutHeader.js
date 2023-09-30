@@ -6,7 +6,7 @@ const AboutHeader = () => {
       <div className="container__left"></div>
       <div className="aboutHeader__right">
         <h1>
-          My name is Ajeethhg
+          My name is Ajeeth
           <button className="speakerIcon" aria-describedby="tippy-1">
             <RxSpeakerQuiet />
           </button>
